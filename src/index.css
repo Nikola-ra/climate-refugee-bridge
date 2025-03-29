@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,31 @@
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
+}
+
+.quote-text {
+  position: relative;
+}
+
+.quote-text::before,
+.quote-text::after {
+  content: '"';
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.climate-stat {
+  @apply relative overflow-hidden rounded-lg p-6 text-white;
+  transition: transform 0.3s ease;
+}
+
+.climate-stat:hover {
+  transform: translateY(-5px);
+}
+
+.stat-value {
+  @apply text-4xl font-bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
