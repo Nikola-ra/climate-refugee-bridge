@@ -46,8 +46,8 @@ const PoemSection = () => {
           <div className="relative">
             <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-lg shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-                alt="River between mountains under white clouds" 
+                src="https://images.unsplash.com/photo-1547683905-f686c2178c9c" 
+                alt="Flooded area after hurricane" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">

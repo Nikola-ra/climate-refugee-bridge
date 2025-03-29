@@ -3,19 +3,28 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CloudRain, CloudSun, Leaf } from "lucide-react";
 
-const StatCard = ({ icon, title, value, description, color }: { 
+const StatCard = ({ icon, title, value, description, color, bgImage }: { 
   icon: React.ReactNode, 
   title: string, 
   value: string, 
   description: string,
-  color: string 
+  color: string,
+  bgImage: string
 }) => (
-  <Card className={`climate-stat ${color}`}>
-    <CardHeader className="flex flex-row items-center gap-2 pb-2">
+  <Card className={`climate-stat ${color} relative overflow-hidden`}>
+    <div 
+      className="absolute inset-0 z-0 opacity-20" 
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    ></div>
+    <CardHeader className="flex flex-row items-center gap-2 pb-2 relative z-10">
       {icon}
       <CardTitle className="text-lg font-medium">{title}</CardTitle>
     </CardHeader>
-    <CardContent>
+    <CardContent className="relative z-10">
       <p className="stat-value">{value}</p>
       <CardDescription className="text-white/80 mt-2">{description}</CardDescription>
     </CardContent>
@@ -43,6 +52,7 @@ const SDG13Section = () => {
             value="21.5 million"
             description="People displaced annually due to climate disasters"
             color="bg-ocean-DEFAULT"
+            bgImage="https://images.unsplash.com/photo-1630002931917-964bceb12126"
           />
           <StatCard 
             icon={<CloudSun className="h-6 w-6 text-white" />} 
@@ -50,6 +60,7 @@ const SDG13Section = () => {
             value="1.5°C"
             description="Global temperature increase we must limit to avoid catastrophe"
             color="bg-storm-DEFAULT"
+            bgImage="https://images.unsplash.com/photo-1534794048419-48e110dca88e"
           />
           <StatCard 
             icon={<Leaf className="h-6 w-6 text-white" />} 
@@ -57,6 +68,7 @@ const SDG13Section = () => {
             value="80%"
             description="Of climate refugees come from the world's poorest regions"
             color="bg-earth-DEFAULT"
+            bgImage="https://images.unsplash.com/photo-1504808902208-d7879232f67e"
           />
         </div>
 

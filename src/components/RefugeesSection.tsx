@@ -1,8 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Flag, MessageSquare } from "lucide-react";
+import { Flag } from "lucide-react";
 
 const CaseStudy = ({ title, location, year, description, imageUrl }: {
   title: string;
@@ -62,43 +61,28 @@ const RefugeesSection = () => {
         </div>
 
         <h3 className="text-2xl font-bold mb-6">Real World Case Studies</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <CaseStudy
             title="Hurricane Katrina"
             location="New Orleans, USA"
             year="2005"
             description="Over 400,000 people were displaced, with many unable to return to their communities. Environmental injustice was evident as low-income and minority populations were disproportionately affected."
-            imageUrl="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+            imageUrl="https://images.unsplash.com/photo-1559825481-12a05cc00344"
           />
           <CaseStudy
             title="Cyclone Idai"
             location="Mozambique"
             year="2019"
             description="Nearly 2 million people were affected, with hundreds of thousands displaced from their homes. The cyclone destroyed 90% of the city of Beira, making it one of Africa's worst climate disasters."
-            imageUrl="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+            imageUrl="https://images.unsplash.com/photo-1603766806347-544d70260dfa"
           />
           <CaseStudy
             title="Rising Sea Levels"
             location="Bangladesh"
             year="Ongoing"
             description="Up to 18 million Bangladeshis may be forced to move by 2050 due to sea level rise alone. Already, saltwater intrusion is making coastal farming impossible, forcing internal migration."
-            imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+            imageUrl="https://images.unsplash.com/photo-1570847196714-ac9a34a6842b"
           />
-        </div>
-
-        <div className="bg-gray-50 rounded-lg p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-start gap-4">
-            <MessageSquare className="h-10 w-10 text-earth-DEFAULT flex-shrink-0" />
-            <div>
-              <h3 className="text-xl font-bold mb-2">Join the Conversation</h3>
-              <p>
-                Climate change impacts are unequally distributed, with those least responsible often suffering the most severe consequences.
-              </p>
-            </div>
-          </div>
-          <Button size="lg" className="bg-earth-DEFAULT hover:bg-earth-dark text-white whitespace-nowrap">
-            Share Your Story
-          </Button>
         </div>
       </div>
     </section>
