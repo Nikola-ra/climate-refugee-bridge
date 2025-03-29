@@ -46,7 +46,7 @@ const PoemSection = () => {
           <div className="relative">
             <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-lg shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb" 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
                 alt="River between mountains under white clouds" 
                 className="w-full h-full object-cover"
               />
@@ -58,10 +58,6 @@ const PoemSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="absolute -bottom-5 -right-5 bg-ocean-dark text-white p-4 rounded-lg shadow-lg hidden md:block">
-              <p className="font-bold">Question to Consider:</p>
-              <p className="italic">"How would you feel if a storm destroyed your home overnight?"</p>
             </div>
           </div>
         </div>

@@ -68,21 +68,21 @@ const RefugeesSection = () => {
             location="New Orleans, USA"
             year="2005"
             description="Over 400,000 people were displaced, with many unable to return to their communities. Environmental injustice was evident as low-income and minority populations were disproportionately affected."
-            imageUrl="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
+            imageUrl="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
           />
           <CaseStudy
             title="Cyclone Idai"
             location="Mozambique"
             year="2019"
             description="Nearly 2 million people were affected, with hundreds of thousands displaced from their homes. The cyclone destroyed 90% of the city of Beira, making it one of Africa's worst climate disasters."
-            imageUrl="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+            imageUrl="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
           />
           <CaseStudy
             title="Rising Sea Levels"
             location="Bangladesh"
             year="Ongoing"
             description="Up to 18 million Bangladeshis may be forced to move by 2050 due to sea level rise alone. Already, saltwater intrusion is making coastal farming impossible, forcing internal migration."
-            imageUrl="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+            imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
           />
         </div>
 
