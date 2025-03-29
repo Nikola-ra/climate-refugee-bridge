@@ -52,7 +52,7 @@ const SDG13Section = () => {
             value="21.5 million"
             description="People displaced annually due to climate disasters"
             color="bg-ocean-DEFAULT"
-            bgImage="https://images.unsplash.com/photo-1630002931917-964bceb12126"
+            bgImage="https://images.unsplash.com/photo-1518495973542-4542c06a5843"
           />
           <StatCard 
             icon={<CloudSun className="h-6 w-6 text-white" />} 
@@ -60,7 +60,7 @@ const SDG13Section = () => {
             value="1.5°C"
             description="Global temperature increase we must limit to avoid catastrophe"
             color="bg-storm-DEFAULT"
-            bgImage="https://images.unsplash.com/photo-1534794048419-48e110dca88e"
+            bgImage="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb"
           />
           <StatCard 
             icon={<Leaf className="h-6 w-6 text-white" />} 
@@ -68,7 +68,7 @@ const SDG13Section = () => {
             value="80%"
             description="Of climate refugees come from the world's poorest regions"
             color="bg-earth-DEFAULT"
-            bgImage="https://images.unsplash.com/photo-1504808902208-d7879232f67e"
+            bgImage="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
           />
         </div>
 

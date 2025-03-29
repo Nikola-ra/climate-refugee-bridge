@@ -6,7 +6,7 @@ import { ArrowDown } from "lucide-react";
 const Hero = () => {
   return (
     <div className="relative min-h-[calc(100vh-4rem)] flex items-center">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1563543694-b3c7c8c629cb')] bg-cover bg-center">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1469474968028-56623f02e42e')] bg-cover bg-center">
         <div className="absolute inset-0 bg-hero-pattern"></div>
       </div>
       <div className="container relative z-10 px-4 py-16 md:py-24">

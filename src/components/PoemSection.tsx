@@ -46,7 +46,7 @@ const PoemSection = () => {
           <div className="relative">
             <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-lg shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1547683905-f686c2178c9c" 
+                src="https://images.unsplash.com/photo-1472396961693-142e6e269027" 
                 alt="Flooded area after hurricane" 
                 className="w-full h-full object-cover"
               />
