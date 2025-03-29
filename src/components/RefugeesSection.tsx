@@ -1,14 +1,19 @@
+import React from "react"
+import { Card, CardContent } from "@/components/ui/card"
+import { Flag } from "lucide-react"
 
-import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
-import { Flag } from "lucide-react";
-
-const CaseStudy = ({ title, location, year, description, imageUrl }: {
-  title: string;
-  location: string;
-  year: string;
-  description: string;
-  imageUrl: string;
+const CaseStudy = ({
+  title,
+  location,
+  year,
+  description,
+  imageUrl,
+}: {
+  title: string
+  location: string
+  year: string
+  description: string
+  imageUrl: string
 }) => (
   <Card className="overflow-hidden h-full">
     <div className="h-48 overflow-hidden">
@@ -23,7 +28,7 @@ const CaseStudy = ({ title, location, year, description, imageUrl }: {
       <p className="text-gray-700">{description}</p>
     </CardContent>
   </Card>
-);
+)
 
 const RefugeesSection = () => {
   return (
@@ -33,9 +38,12 @@ const RefugeesSection = () => {
           <span className="inline-block py-1 px-3 bg-earth-light/20 text-earth-dark rounded-full text-sm font-medium mb-4">
             The Human Impact
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Climate Refugees</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Climate Refugees
+          </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Unlike political refugees, those displaced by climate change lack legal recognition under international law.
+            Unlike political refugees, those displaced by climate change lack
+            legal recognition under international law.
           </p>
         </div>
 
@@ -43,16 +51,25 @@ const RefugeesSection = () => {
           <div className="relative overflow-hidden rounded-xl">
             <div className="bg-ocean-dark p-8 md:p-12 rounded-xl text-white">
               <div className="max-w-3xl">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4">Legal Gap</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                  Legal Gap
+                </h3>
                 <p className="mb-4">
-                  The 1951 Refugee Convention does not recognize people fleeing climate disasters as "refugees," leaving millions without legal protection or assistance.
+                  The 1951 Refugee Convention does not recognize people fleeing
+                  climate disasters as "refugees," leaving millions without
+                  legal protection or assistance.
                 </p>
                 <p className="mb-6">
-                  This gap in international law means those forced to relocate due to rising seas, recurring floods, or devastating hurricanes have no guaranteed right to resettle in safer areas.
+                  This gap in international law means those forced to relocate
+                  due to rising seas, recurring floods, or devastating
+                  hurricanes have no guaranteed right to resettle in safer
+                  areas.
                 </p>
                 <div className="flex items-center gap-4">
-                  <Flag className="h-6 w-6" />
-                  <p className="font-bold">By 2050, up to 1.2 billion people could be displaced by climate-related events.</p>
+                  <p className="font-bold">
+                    By 2050, up to 1.2 billion people could be displaced by
+                    climate-related events.
+                  </p>
                 </div>
               </div>
             </div>
@@ -67,26 +84,26 @@ const RefugeesSection = () => {
             location="New Orleans, USA"
             year="2005"
             description="Over 400,000 people were displaced, with many unable to return to their communities. Environmental injustice was evident as low-income and minority populations were disproportionately affected."
-            imageUrl="https://images.unsplash.com/photo-1518495973542-4542c06a5843"
+            imageUrl="/public/katrina.jpg"
           />
           <CaseStudy
             title="Cyclone Idai"
             location="Mozambique"
             year="2019"
             description="Nearly 2 million people were affected, with hundreds of thousands displaced from their homes. The cyclone destroyed 90% of the city of Beira, making it one of Africa's worst climate disasters."
-            imageUrl="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+            imageUrl="/public/idai.jpg"
           />
           <CaseStudy
             title="Rising Sea Levels"
             location="Bangladesh"
             year="Ongoing"
             description="Up to 18 million Bangladeshis may be forced to move by 2050 due to sea level rise alone. Already, saltwater intrusion is making coastal farming impossible, forcing internal migration."
-            imageUrl="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
+            imageUrl="/public/floods.jpg"
           />
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default RefugeesSection;
+export default RefugeesSection
