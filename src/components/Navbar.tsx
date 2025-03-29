@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <nav className="hidden md:flex items-center gap-6">
           <a
-            href="#sdg13"
+            href="https://sdgs.un.org/goals/goal13"
             className="text-sm font-medium hover:text-ocean-dark transition-colors"
           >
             SDG 13

@@ -61,7 +61,10 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="https://www.climate-refugees.org/"
+                    className="hover:text-white transition-colors"
+                  >
                     Climate Refugee Organizations
                   </a>
                 </li>
