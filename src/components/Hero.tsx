@@ -25,7 +25,7 @@ const Hero = () => {
           <footer className="mt-4 text-base text-white/70">
             - Benjamin Zephaniah, We Refugees
           </footer>
-          <p className="text-lg md:text-xl text-white/90 mb-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8 mt-5">
             Did you know that climate change displaces an average of 21.5
             million people annually?
           </p>
